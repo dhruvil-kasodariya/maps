@@ -9,6 +9,7 @@ import { scaleQuantile } from "d3-scale";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import LinearGradient from "./LinearGradient.js";
 import heatMapData from "../../data/heatData.js";
+import Navbar from "../../componets/navbar.jsx";
 
 const INDIA_STATE_GEO_JSON = require("../../data/json/india_state_geo.json");
 
@@ -73,8 +74,10 @@ const SimpleReactMapIndia = () => {
   };
  
   return (
-    <div className="full-width-height container">
-      <h1 className="no-margin center">States and UTs</h1>
+  <>
+<Navbar title={"Simple React Map India"} otherMaps={[{name:"openlayer" ,link:"/openlayer/india"}]}/>
+    <div className="w-full h-screen p-4 ">
+      <h1 className="m-0  text-center text-5xl">States and UTs</h1>
       <ReactTooltip id="stateMap" place="top" />
       <ComposableMap
         projectionConfig={PROJECTION_CONFIG}
@@ -85,7 +88,6 @@ const SimpleReactMapIndia = () => {
         <Geographies geography={INDIA_STATE_GEO_JSON}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              console.log('geo :>> ', geo);
               const current = data.find((s) => s.id == geo.properties.id);
               return (
                 <Geography
@@ -123,6 +125,7 @@ const SimpleReactMapIndia = () => {
       </ComposableMap>
       <LinearGradient data={gradientData} />
     </div>
+    </>
   );
 };
 

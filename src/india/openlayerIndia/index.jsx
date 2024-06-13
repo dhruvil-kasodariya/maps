@@ -8,6 +8,7 @@ import OSM from "ol/source/OSM";
 import VectorSource from "ol/source/Vector";
 import { useEffect, useState } from "react";
 import { Fill, Stroke, Style, Text } from "ol/style";
+import Navbar from "../../componets/navbar";
 
 const data = require("../../data/json/india_state_geo.json");
 const data2 = require("../../data/json/india_districts_geo.json");
@@ -110,10 +111,11 @@ export default function OpenlayersIndia() {
 
   return (
     <>
+    <Navbar title={"Openlayer India"} otherMaps={[{name:"simple react map" ,link:"/simple-react-map/india"}]}/>
   
         <div>
           
-          <div id="map" style={{ width: "100%", height: "95vh" }}></div>
+          <div id="map" style={{ width: "100%", height: "90vh" }}></div>
           <form className="d-flex gap-4">
             <input
               className="py-2"
