@@ -94,6 +94,10 @@ export default function OpenlayersIndia() {
       }),
     });
 
+    let  logo = document.querySelector('.ol-attribution');
+    logo.style.opacity = 0;
+
+
     setMap(map);
   };
 
