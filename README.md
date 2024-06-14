@@ -21,8 +21,8 @@
 
 This project allows you to compare the two libraries side-by-side to understand their differences:
 
--**Simple-react-map**: Offers a basic and easy-to-use approach for simple map visualizations.
--**OpenLayers**: Provides a powerful and customizable solution for complex map interactions and data visualization.
+- **Simple-react-map**: Offers a basic and easy-to-use approach for simple map visualizations.
+- **OpenLayers**: Provides a powerful and customizable solution for complex map interactions and data visualization.
 
 ## Further Development:
 
