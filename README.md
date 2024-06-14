@@ -3,8 +3,8 @@
 
 ## Live Demo:
 
-**Simple React Map Demo**: [Simple React Map]()
-**OpenLayers Demo**: [OpenLayers]()
+- **Simple React Map Demo**: [Simple React Map](https://maps-alpha-bice.vercel.app/simple-react-map/india)
+- **OpenLayers Demo**: [OpenLayers](https://maps-alpha-bice.vercel.app/openlayer/india)
 
 ## Project Overview:
 
