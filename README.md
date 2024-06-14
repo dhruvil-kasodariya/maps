@@ -8,7 +8,9 @@
 
 ## Project Overview:
 
-  This project showcases the creation of an Indian map in a React application using two popular mapping libraries: simple-react-map and OpenLayers.
+  This project showcases the creation of an Indian map in a React application using two popular mapping libraries: 
+  - simple-react-map
+  - OpenLayers.
 
 ## Technologies Used:
 
